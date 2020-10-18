@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.day16.linkedlist.test.LLTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-17T16:03:05" hostname="DESKTOP-9T3G1G1" time="0.001">
+<testsuite name="com.day16.linkedlist.test.LLTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-18T11:27:25" hostname="DESKTOP-9T3G1G1" time="0.014">
   <properties/>
-  <testcase name="testLinkedList" classname="com.day16.linkedlist.test.LLTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testLinkedList" classname="com.day16.linkedlist.test.LLTest" time="0.014"/>
+  <system-out><![CDATA[[30]-[50]-[70]-
+Pos is: 0
+Invalid positionPosition out of range[30]-[50]-[70]-
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
