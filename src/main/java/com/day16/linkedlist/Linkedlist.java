@@ -14,7 +14,7 @@ public class Linkedlist {
 
     public Node head = null;
     public Node temp= null;
-
+// UserCase 1
     public void addNode(int data) {
         Node newNode = new Node(data);
         if (head == null)
@@ -26,12 +26,45 @@ public class Linkedlist {
         }
         temp = newNode;
     }
+    // UserCase 2
+    public void addAtStart(int data) {
+
+        Node newNode = new Node(data);
+        if (head == null) {
+
+            head = newNode;
+            temp =newNode;
+        }
+        else
+        {
+            Node temp = head;
+            head = newNode;
+            head.next = temp;
+        }
+    }
+
+    public void display()
+    {
+        Node n = head;
+        if (head == null) {
+            System.out.println("Oops!! Nothing in list");
+            return;
+        }
+
+        while (n != null)
+        {
+            System.out.print("["+n.data + "]-");
+            n = n.next;
+        }
+        System.out.println();
+    }
 
     public static void main(String[] args) {
 
         Linkedlist List = new Linkedlist();
-        List.addNode(70);
-        List.addNode(30);
-        List.addNode(56);
+        List.addAtStart(70);
+        List.addAtStart(30);
+        List.addAtStart(56);
+        List.display();
     }
 }
