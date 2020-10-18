@@ -2,7 +2,8 @@ package com.day16.linkedlist;
 
 
 public class Linkedlist {
-    class Node {
+
+    static class Node {
         int data;
         Node next;
 
